@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.main {
+	display: none;
+}
+
+.pulseH1 {
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin-top: 200px;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+	-webkit-animation: pulse 3s linear 0s infinite normal forwards;
+	-moz-animation: pulse 3s linear 0s infinite normal forwards;
+	-ms-animation: pulse 3s linear 0s infinite normal forwards;
+	-o-animation: pulse 3s linear 0s infinite normal forwards;
+	animation: pulse 3s linear 0s infinite normal forwards;
+}
+
+.thumbnail {
+	width: 300px;
+	height: 200px;
+	bottom: 0px;
+	margin: 0 10px 0 10px;
+	border: 1px solid #EE58FF;
+}
+
+.carousel {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	position: absolute;
+	bottom: 0;
+	display: block;
+}
+
+.mainVideo {
+	margin: 0 auto 0 auto;
+	width: 600px;
+	height: 450px;
+	display: none;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin-top: 50px;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+}
+
+p {
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+
+h2 {
+		color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 50px;
+	font-weight: 100;
+}
+
+a { 
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+a:hover {
+	opacity: 0.5;
+	border-bottom: 1px solid #EE58FF;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 1.0;
+	}
+	25% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	75% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@-moz-keyframes pulse {
+	0% {
+		opacity: 1.0;
+	}
+	25% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	75% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@-ms-keyframes pulse {
+	0% {
+		opacity: 1.0;
+	}
+	25% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	75% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@-o-keyframes pulse {
+	0% {
+		opacity: 1.0;
+	}
+	25% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	75% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@keyframes pulse {`
+	0% {
+		opacity: 1.0;
+	}
+	25% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	75% {
+		opacity: 0.5;
+		color: #EE58FF;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
