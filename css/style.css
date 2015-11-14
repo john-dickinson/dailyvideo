@@ -5,17 +5,21 @@ body {
 }
 
 .main {
-	display: none;
+	visibility: hidden;
+}
+
+#welcomeWrap {
+	z-index: 2000;
 }
 
 .pulseH1 {
 	color: white;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 50px;
-	margin-top: 200px;
+	font-size: 80px;
+	margin-top: 100px;
 	font-weight: 100;
-	letter-spacing: 0.2em;
+/*	letter-spacing: 0.2em;*/
 	-webkit-animation: pulse 3s linear 0s infinite normal forwards;
 	-moz-animation: pulse 3s linear 0s infinite normal forwards;
 	-ms-animation: pulse 3s linear 0s infinite normal forwards;
@@ -23,27 +27,71 @@ body {
 	animation: pulse 3s linear 0s infinite normal forwards;
 }
 
+.cornerPulse {
+	color: white;
+	text-align: left;
+	margin-left: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+margin-top: 20px;
+	font-weight: 100;
+/*	letter-spacing: 0.2em;*/
+	-webkit-animation: pulse 3s linear 0s infinite normal forwards;
+	-moz-animation: pulse 3s linear 0s infinite normal forwards;
+	-ms-animation: pulse 3s linear 0s infinite normal forwards;
+	-o-animation: pulse 3s linear 0s infinite normal forwards;
+	animation: pulse 3s linear 0s infinite normal forwards;
+}
+
+.cornerPulse:hover {
+/*	border-bottom: 1px solid #EE58FF;*/
+	cursor: pointer;
+}
+
+.bandName {
+	position: absolute;
+	left: 50%;
+}
+
 .thumbnail {
-	width: 300px;
-	height: 200px;
+	width: 100%;
+/*	height: 200px;*/
 	bottom: 0px;
 	margin: 0 10px 0 10px;
-	border: 1px solid #EE58FF;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	overflow: hidden;
+	border: 3px solid black;
+}
+
+.thumbnail:hover {
+	opacity: 0.8;
+	-webkit-filter: brightness(1.3);
+	filter: brightness(1.3);
+	cursor: pointer;
+	border: 3px solid #EE58FF;
+}
+
+.thumbnail:focus {
+	outline: none;
 }
 
 .carousel {
-	width: 80%;
-	margin: 0 auto 0 auto;
-	position: absolute;
-	bottom: 0;
+	width: 85%;
+	margin: 50px auto 0 auto;
 	display: block;
+}
+
+.active_video {
+	display: none;
 }
 
 .mainVideo {
 	margin: 0 auto 0 auto;
 	width: 600px;
+	display: block;
 	height: 450px;
-	display: none;
 }
 
 h1 {
@@ -53,7 +101,7 @@ h1 {
 	font-size: 50px;
 	margin-top: 50px;
 	font-weight: 100;
-	letter-spacing: 0.2em;
+/*	letter-spacing: 0.2em;*/
 }
 
 p {
