@@ -18,13 +18,21 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 80px;
 	margin-top: 100px;
+	margin-bottom: 15px;
 	font-weight: 100;
 /*	letter-spacing: 0.2em;*/
-	-webkit-animation: pulse 3s linear 0s infinite normal forwards;
-	-moz-animation: pulse 3s linear 0s infinite normal forwards;
-	-ms-animation: pulse 3s linear 0s infinite normal forwards;
-	-o-animation: pulse 3s linear 0s infinite normal forwards;
-	animation: pulse 3s linear 0s infinite normal forwards;
+	-webkit-animation: pulse 6s linear 0s infinite normal forwards;
+	-moz-animation: pulse 6s linear 0s infinite normal forwards;
+	-ms-animation: pulse 6s linear 0s infinite normal forwards;
+	-o-animation: pulse 6s linear 0s infinite normal forwards;
+	animation: pulse 6s linear 0s infinite normal forwards;
+}
+
+i {
+	margin-bottom: 15px;
+	color: #EE58FF;
+	width: 100%;
+	text-align: center;
 }
 
 .cornerPulse {
@@ -81,8 +89,6 @@ margin-top: 20px;
 	outline: none;
 }
 
-
-
 .carousel {
 	width: 85%;
 	margin: 50px auto 0 auto;
@@ -126,11 +132,15 @@ p {
 }
 
 h2 {
-		color: white;
+	color: white;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	margin-top: 50px;
 	font-weight: 100;
+}
+
+.main h2 {
+	margin-top: 10px;
 }
 
 a { 

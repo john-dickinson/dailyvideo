@@ -9,16 +9,16 @@ $(document).ready(function() {
 	});
 
 	var artists = {
-		bobbi: {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "Bobbi Palace"},
-		wipe : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "Wipe"},
-		saajtak : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "Saajtak"},
-		gabby : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "Gabby Kirsch"},
-		rella : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "Rella"}
+		bobbi: {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "BOBBI PALACE"},
+		wipe : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "WIPE"},
+		saajtak : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "SAAJTAK"},
+		gabi : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "GABI KIRSCH"},
+		rella : {url:'https://www.youtube.com/embed/IxLHwL5cax8?autoplay=0&showinfo=0&controls=2', artist_name: "RELLA"}
 	}
 
 	var videoAnimationModule = {
 		toVideo: function(id){
-			$('.main').animate({left: "5000px"},function(){
+			$('.main').animate({backgroundPositionX: "+=1500px",},function(){
 				$('.main').fadeOut('fast',function(){
 					$('.active_video').empty();
 					var video = '<iframe class="mainVideo" src="'+ artists[id].url +'" frameborder="0" allowfullscreen></iframe>';
@@ -26,7 +26,7 @@ $(document).ready(function() {
 					$('.active_video').append('<h1 class="cornerPulse">< SESSIONS</h1>');
 					$('.active_video').append(title);
 					$('.active_video').append(video);
-					$('.active_video').fadeIn('fast');
+					$('.active_video').fadeIn('slow');
 					$('.cornerPulse').click(function(){
 						videoAnimationModule.toMain();
 					});
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 		toMain: function(){
 			$('.active_video').fadeOut('fast',function(){
-				$('.main').fadeIn('fast');
+				$('.main').fadeIn('slow');
 			});
 		}
 	}
